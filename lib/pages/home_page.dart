@@ -66,7 +66,7 @@ class _HomePageState extends State<HomePage> {
                     TituloMoedaWidget(nome: usd?.name ?? ''),
                     const SizedBox(height: 10),
                     AtributoWidget(
-                        atualizacao: usd?.conversaoData() ?? '',
+                        atualizacao: usd?.conversaoDate() ?? '',
                         compra: usd?.bid ?? '',
                         venda: usd?.ask ?? '',
                         variacaoValue: usd?.varBid ?? '',
@@ -84,7 +84,7 @@ class _HomePageState extends State<HomePage> {
                     TituloMoedaWidget(nome: eur?.name ?? ''),
                     const SizedBox(height: 10),
                     AtributoWidget(
-                        atualizacao: eur?.conversaoData() ?? '',
+                        atualizacao: eur?.conversaoDate() ?? '',
                         compra: eur?.bid ?? '',
                         venda: eur?.ask ?? '',
                         variacaoValue: eur?.varBid ?? '',
@@ -102,7 +102,7 @@ class _HomePageState extends State<HomePage> {
                     TituloMoedaWidget(nome: btc?.name ?? ''),
                     const SizedBox(height: 10),
                     AtributoWidget(
-                        atualizacao: btc?.conversaoData() ?? '',
+                        atualizacao: btc?.conversaoDate() ?? '',
                         compra: btc?.bid ?? '',
                         venda: btc?.ask ?? '',
                         variacaoValue: btc?.varBid ?? '',

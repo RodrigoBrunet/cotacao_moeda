@@ -69,7 +69,7 @@ class USDBRL {
     return data;
   }
 
-  conversaoData() {
+  conversaoDate() {
     var conversao =
         DateFormat('dd/MM/yyyy HH:mm:ss').format(DateTime.parse(createDate!));
     return conversao;
