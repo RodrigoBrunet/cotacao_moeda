@@ -91,15 +91,15 @@ class _HomePageState extends State<HomePage> {
                     Row(
                       children: [
                         Text(
-                          usd!.varBid!,
+                          'Variação: ',
                           style: h1,
                         ),
                         Text(
-                          usd.varBid ?? '',
+                          usd?.varBid ?? '',
                           style: TextStyle(
                               fontSize: 16,
                               fontWeight: FontWeight.w500,
-                              color: usd.varBid!.contains('-')
+                              color: usd!.varBid!.contains('-')
                                   ? Colors.red
                                   : Colors.green),
                         ),
